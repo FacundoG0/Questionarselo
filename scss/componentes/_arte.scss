@@ -1,0 +1,26 @@
+.contenido-arte{
+    @extend .cuadro;
+
+    .pregunta-arte{
+        @extend .flex-column-center;
+        color: white;
+    }
+
+    .respuestas{
+        @extend .flex-column-center;
+
+        .btn{
+            margin-top: 1rem;
+            width: 60%;
+            text-align: justify;
+
+            &:hover{
+                background-color: lemonchiffon;
+            }
+
+            .opcion{
+                font-weight: bold;
+            }
+        }
+    }
+}

@@ -1,7 +1,7 @@
 body {
   background-color: violet; }
 
-.cuadro, main .contenido {
+.cuadro, main .contenido, .contenido-arte {
   width: 720px;
   height: 400px;
   background-color: purple;
@@ -11,7 +11,7 @@ body {
   -webkit-box-shadow: 0px 0px 19px 12px purple;
   -moz-box-shadow: 0px 0px 19px 12px purple; }
 
-.flex-column-center {
+.flex-column-center, .contenido-arte .pregunta-arte, .contenido-arte .respuestas {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -52,6 +52,18 @@ main {
         text-align: center;
         width: 100px;
         visibility: hidden; }
+
+.contenido-arte .pregunta-arte {
+  color: white; }
+
+.contenido-arte .respuestas .btn {
+  margin-top: 1rem;
+  width: 60%;
+  text-align: justify; }
+  .contenido-arte .respuestas .btn:hover {
+    background-color: lemonchiffon; }
+  .contenido-arte .respuestas .btn .opcion {
+    font-weight: bold; }
 
 * {
   padding: 0;
